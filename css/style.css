@@ -3700,7 +3700,7 @@ a.btn-link {
 .space-border,
 .space-border:before,
 .space-border:after {
-  width: 30px;
+  width: 120px;
   height: 1px;
 }
 
@@ -3711,6 +3711,7 @@ a.btn-link {
   margin-bottom: 40px;
 }
 
+/*
 .space-border:before {
   content: "";
   position: absolute;
@@ -3723,6 +3724,7 @@ a.btn-link {
   right: -40px;
   background: rgba(255, 255, 255, 0.25);
 }
+*/
 
 hr {
   display: block;
