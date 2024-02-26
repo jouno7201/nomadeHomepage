@@ -18304,3 +18304,19 @@ img {
   padding: 40px;
   margin-bottom: 40px;
 }
+
+#kakao-link {
+  border: solid 1px #ffffff;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1020;
+  width: 40px;
+  height: 40px;
+  cursor: poInter;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+
+  overflow: hidden;
+}
