@@ -87,9 +87,9 @@
                 <div class="menu_side_area">
                   <a style="display: flex; gap: 4px">노마드몰</a>
                   <div class="langBtnWrap">
-                    <button class="active">kor</button>
-                    <button onclick="translang(1)">eng</button>
-                    <button onclick="translang(2)">fra</button>
+                    <button>kor</button>
+                    <button class="active">eng</button>
+                    <button>fra</button>
                   </div>
                 </div>
               </div>
@@ -329,21 +329,6 @@
     <script src="js/designesia.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="form.js"></script>
-    <script>
-      const translang = (option) => {
-        let temp = window.location.href.split("/");
-
-        if (option == 1) {
-          temp[3] = temp[3].split(".")[0].split("_")[0] + "_eng.html";
-        } else if (option == 2) {
-          temp[3] = temp[3].split(".")[0].split("_")[0] + "_fra.html";
-        } else {
-          temp[3] = temp[3].split(".")[0].split("_")[0] + ".html";
-        }
-
-        window.location.href = temp.join("/");
-      };
-    </script>
     <script>
       jQuery(function ($) {
         $(".g-recaptcha").attr("data-theme", "dark");

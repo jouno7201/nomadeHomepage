@@ -18320,3 +18320,14 @@ img {
 
   overflow: hidden;
 }
+
+.btn_type1 {
+  padding: 16px;
+  color: #ffffff;
+  border-radius: 28px;
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
