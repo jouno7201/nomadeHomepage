@@ -18306,17 +18306,13 @@ img {
 }
 
 #kakao-link {
-  border: solid 1px #ffffff;
   position: fixed;
-  bottom: 80px;
+  bottom: 90px;
   right: 20px;
   z-index: 1020;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 60px;
   cursor: poInter;
-  border-radius: 100%;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
 
   overflow: hidden;
 }
