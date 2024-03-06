@@ -18284,7 +18284,7 @@ img {
 
 .data-box {
   width: 100%;
-  height: 600px;
+  height: 720px;
   background-color: #ffffff5e;
   border-radius: 40px;
   display: flex;
@@ -18303,6 +18303,25 @@ img {
   border-radius: 40px;
   padding: 40px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.effect-box2 {
+  width: 100%;
+  background-color: #000000bd;
+  border-radius: 40px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.effect-box > div {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 #kakao-link {

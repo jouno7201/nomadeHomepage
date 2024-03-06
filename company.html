@@ -44,16 +44,39 @@
                   <div class="de-flex-col">
                     <!-- logo begin -->
                     <div id="logo">
-                      <a href="index.html">
+                      <a href="index.html" style="display: flex; gap: 10px">
                         <img
                           alt=""
                           class="logo"
                           src="images/한국로고 하양.png"
                           width="40px"
                         />
-                        <span style="color: aliceblue; font-size: 20px"
-                          >NOMADE</span
-                        >
+                        <span style="display: flex; flex-direction: column">
+                          <span style="color: aliceblue; font-size: 20px"
+                            >NOMADE STUDIO</span
+                          >
+                          <span
+                            style="
+                              color: aliceblue;
+                              font-size: 16px;
+                              display: flex;
+                              justify-content: space-between;
+                              width: 100%;
+                            "
+                            >
+                              <span>(</span>
+                              <span>주</span>
+                              <span>)</span>
+                              <span>노</span>
+                              <span>마</span>
+                              <span>드</span>
+                              <span>스</span>
+                              <span>튜</span>
+                              <span>디</span>
+                              <span>오</span>
+                            </span>
+                          </span>
+                        </span>
                       </a>
                     </div>
                     <!-- logo close -->
@@ -70,19 +93,22 @@
                       ></a>
                     </li>
                     <li>
-                      <a href="./overseas.html">해외사업부<span></span></a>
+                      <a href="./studio.html">부스쉐어<span></span></a>
                     </li>
                     <li>
-                      <a href="./entertainment.html">엔터사업부<span></span></a>
+                      <a href="./overseas.html">게스트워크<span></span></a>
                     </li>
                     <li>
-                      <a href="./studio.html">스튜디오<span></span></a>
+                      <a href="./entertainment.html">촬영대관<span></span></a>
                     </li>
                     <li>
-                      <a href="./ncs.html">NSC<span></span></a>
+                      <a href="./ncs.html">법률지원<span></span></a>
                     </li>
                     <li>
-                      <a href="./class.html">강의<span></span></a>
+                      <a href="./class.html">아카데미<span></span></a>
+                    </li>
+                    <li>
+                      <a href="./class.html">타투문의<span></span></a>
                     </li>
                   </ul>
                 </div>
@@ -90,8 +116,8 @@
                   <a style="display: flex; gap: 4px">노마드몰</a>
                   <div class="langBtnWrap">
                     <button class="active">kor</button>
-                    <button>eng</button>
-                    <button>fra</button>
+                    <button onclick="translang(1)">eng</button>
+                    <button onclick="translang(2)">fra</button>
                   </div>
                 </div>
               </div>
@@ -132,32 +158,49 @@
           aria-label="section"
           class="jarallax no-top no-bottom text-light"
         >
-          <img src="images/company_bg1.png" class="jarallax-img" alt="" />
+          <img
+            src="images/company_bg1.png"
+            class="jarallax-img"
+            alt=""
+            height="200%"
+          />
           <div class="v-center">
             <div class="container">
-              <div class="row">
+              <div class="row" style="margin-bottom: 40px">
                 <div class="col-md-12 text-center wow fadeInUp">
-                  <h2>회사 소개</h2>
+                  <h2 style="margin-top: 80px">회사 소개</h2>
                   <div class="space-border"></div>
                   <div class="data-box">
-                    <img src="./images/ceo.png" alt="" height="480px" />
+                    <img src="./images/ceo.png" alt="" height="540px" />
                     <div class="profile-box">
                       <h3>NOMADE 대표이사 이유철</h3>
                       <span>출생 1993. 9. 14. 프랑스</span>
                       <span>수상</span>
-                      <span>2023년 서울특별시의회 의장 표창</span>
-                      <span>2023년 인스파이어타투어워즈(주) 후원사 공로패</span>
-
-                      <h3 style="margin-top: 40px">인사말</h3>
+                      <span>2023 서울특별시의회 의장 표창 </span>
+                      <span>2023인스파이어타투어워즈(주) 후원사 공로패 </span>
+                      <span>2022 국회의원 홍석준 미용문화예술산업 표창 </span>
+                      <span
+                        >2022 제12회 스타킹월드뷰티콘테스트 심사위원장패
+                      </span>
+                      <span>2022 제10회 스타킹뷰티월드콘테스트 공로패</span>
+                      <h3 style="margin-top: 20px; margin-bottom: 10px">
+                        인사말
+                      </h3>
                       <p>
-                        타투는 전문기술과 예술의 결합입니다.<br />
-                        각각의 타투이스트는 독특한 브랜드로 자리매김합니다.<br />
-                        우리는 타투이스트의 브랜딩을 지원하고,<br />
-                        필요한 창구와 스피커 역할을 합니다.<br />
-                        <br />
-                        고객들은 이미지보다는 아티스트의 가치관과 아이덴티티,
-                        풍부한 경험을 추구합니다.<br />
-                        당신의 브랜드와 함께 미래를 개척해나갈 수 있습니다.<br />
+                        현대 사회는 통섭과 융합의 특성을 갖추고 있습니다.<br />
+                        문신업은 전문 기술, 예술, 그리고 상업이 결합된
+                        산업입니다.<br />이와 더불어 현대는 공유 사회로서의
+                        측면도 갖추고 있습니다.<br /><br />노마드스튜디오는
+                        문신사들이 작품 활동을 할 수 있는 공간과 환경을
+                        제공하고,<br />
+                        문신사들의 브랜딩을 지원하며 소비자들의 수요와 연결하여
+                        공급합니다.<br />
+                        노마드스튜디오는 문신사들에게 소속을 강제하지 않으며,<br />
+                        개인 스튜디오나 특정 크루에 소속되어 있더라도 당사의
+                        모든 환경과 혜택을 자유롭게 이용할 수 있습니다.
+                        <br />당사는 또한 문신사들의 민형사적 책임에도 고민을
+                        함께하고 지원을 아끼지 않습니다.<br /><br />문신사들의
+                        절대적 선택지는 바로 이곳입니다. NOMADE
                       </p>
                     </div>
                   </div>
@@ -228,7 +271,7 @@
                       <h3 class="d_timeline-title">2021.11</h3>
                       <p class="d_timeline-text">
                         <span class="d_title"
-                          >(주)노마드스튜디오 동해 직영점 오픈r</span
+                          >(주)노마드스튜디오 동해 직영점 오픈</span
                         >
                       </p>
                     </li>
@@ -246,6 +289,7 @@
                         <span class="d_title"
                           >인스파이어타투어워즈(주) 후원사 지정</span
                         >
+                        <span class="d_title">K-ART메이크업협회 후원 추가</span>
                       </p>
                     </li>
                     <li class="d_timeline-item">
