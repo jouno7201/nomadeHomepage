@@ -18346,3 +18346,47 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+.artistBox {
+  width: 100%;
+  height: 400px;
+}
+
+.artistBox > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.artistBox > ul > li {
+  list-style: none;
+  width: calc(100% / 6);
+  height: 320px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artistBox > ul > li > a {
+  cursor: pointer;
+}
+
+.artistBox > ul > li > a:hover {
+  width: 80px;
+  height: 80px;
+  background-color: #ff00009e;
+  color: #ffffff !important;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.classItem:hover {
+  background-color: #ffffff88;
+
+  color: #bb0000;
+  border-radius: 12px;
+}
