@@ -129,7 +129,7 @@
               </div>
               <div class="spacer-single"></div>
               <div class="row g-0">
-                <div class="col-lg-3 wow fadeIn classItem" data-wow-delay=".6s">
+                <div class="col-lg-3 wow fadeIn classItem class3" data-wow-delay=".6s" >
                   <div class="de_3d-box" style="border: none;">
                     <div class="d-inner">
                       <i class="fa fa-paint-brush" style="color: #cf1f1f"></i>
@@ -140,7 +140,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 wow fadeIn classItem" data-wow-delay=".4s">
+                <div class="col-lg-3 wow fadeIn classItem class1" data-wow-delay=".4s">
                   <div class="de_3d-box" style="border: none;">
                     <div class="d-inner">
                       <i class="fa fa-clock-o" style="color: #cf1f1f"></i>
@@ -153,7 +153,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 wow fadeIn classItem" data-wow-delay=".6s">
+                <div class="col-lg-3 wow fadeIn classItem class2" data-wow-delay=".6s">
                   <div class="de_3d-box" style="border: none;">
                     <div class="d-inner">
                       <i class="fa fa-magic" style="color: #cf1f1f"></i>
@@ -202,8 +202,221 @@
           </div>
         </div>
       </footer>
+      <div class="modal fade" id="classDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="classDescriptionModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="width: 100vw;height: 80vh; display: flex; justify-content: center;align-items: center;max-width: 100vw;">
+          <div class="modal-content" style="width: 800px; height: 600px;box-sizing: border-box;padding-bottom: 40px; background-color: #2e2e2e;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="classDescriptionModalLabel">클래스 설명</h5>
+            </div>
+            <div class="modal-body" style="color:rgb(232 232 232);
+            ;">
+              <!-- Class description will be displayed here -->
+              <p id="classDescriptionText">클래스 설명을 불러오는 중입니다...</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
+    <script>
+      $(document).ready(function() {
+        // 각 클래스 아이템을 클릭했을 때 이벤트 핸들러 추가
+        $('.class1').click(function() {
+          // 클릭된 클래스 아이템의 정보를 가져옴
+          var className = $(this).find('h3').text();
+          var classInstructor = '손하은 강사';
+          var classDetails = `
+            <p><strong>${className} - ${classInstructor}</strong></p>
+            <!-- 추가 내용 -->
+            <p><strong>강의내용</strong></p>
+            <ul>
+              <li>대표원장 초밀착 단계별 집중 교육</li>
+              <li>개인의 기술 습득력과 이해도를 고려한 밀착 수업 진행</li>
+              <li>탄탄한 이론과 실제 실무 위주의 교육</li>
+              <li>단기간 억대연봉 달성 포인트</li>
+              <li>해외/국내 반영구시장 비교</li>
+              <li>해외 게스트워킹 방법 공유</li>
+            </ul>
+            <p><strong>경력사항</strong></p>
+            <ul>
+              <li>The Sonn Beauty 창립 & 대표원장</li>
+              <li>The Sonn Academy 실무교육진</li>
+              <li>KART 대외협력운영본부 부회장</li>
+              <li>강남갑 청년위원회 위원</li>
+              <li>유럽국가공인 문신사</li>
+              <li>프랑스 국가공증 ”Attestation de Formation“ 취득</li>
+              <li>K뷰티인협회 정회원</li>
+              <li>IBAC 심사감독관</li>
+              <li>(사) C/S 마스터코스 정규수료</li>
+              <li>골격근 및 해부학교육 수료</li>
+              <li>색소학 교육 수료</li>
+              <li>이미지메이킹 교육과정 정규이수</li>
+              <li>국가공인 이미용자격증 보유</li>
+              <li>항공사 근무이력</li>
+              <li>파리, 리옹, 제네바 등 게스트워킹</li>
+              <li>LA, 제네바, 일본, 싱가폴 등 외국아티스트교육 다수</li>
+              <li>뷰티자동화 BA Crew 창립멤버</li>
+            </ul>
+            <p><strong>프로모션</strong></p>
+            <ol>
+              <li>전 지점 무료사용</li>
+              <li>수료 후 분기별 평가를 통한 프랑스점 정규기수 편성 및 항공료 지원</li>
+              <li>수료 후 분기별 평가를 통한 노마디스트 전환 및 소비자 에이전트</li>
+              <li>수료 후 부스쉐어비 6개월 면제</li>
+              <li>원하는 지점에서 수강 가능하고 수강 후 원하는 지점에서 작업 가능(전 지점 자율 사용)</li>
+              <li>고객분쟁 및 민형사 대응 지원</li>
+              <li>NSC가입비 면제, 연 2회 정기세미나 무료</li>
+              <li>당사 채용전형 서류통과</li>
+              <li>수강 수료증 및 데뷔 후 재직증명서 발급</li>
+              <li>셀프 마케팅 도매 프로그램 교육 및 사용권한 부여</li>
+            </ol>
+            <a href="http://pf.kakao.com/_xfERqG" class="btn_type2">
+              <span style="font-size: 32px">☎️&nbsp;&nbsp;</span>상담하러 가기
+            </a>
+          `;
+          
+          // 모달 내의 정보 엘리먼트에 가져온 정보를 넣음
+          $('#classDescriptionModal .modal-body').html(classDetails);
+          
+          // 모달 표시
+          $('#classDescriptionModal').modal('show');
+        });
+      });
+    </script>
+     <script>
+      $(document).ready(function() {
+        // 각 클래스 아이템을 클릭했을 때 이벤트 핸들러 추가
+        $('.class3').click(function() {
+          // 클릭된 클래스 아이템의 정보를 가져옴
+          var className = $(this).find('h3').text();
+          var classInstructor = '주다스 강사';
+          var classDetails = `
+            <p><strong>${className} - ${classInstructor}</strong></p>
+            <!-- 추가 내용 -->
+              <p><strong>수강기간</strong></p>
+              <ul>
+                <li>주 1-2회 수업 (3시간 or 6시간 선택 가능)</li>
+                <li>수업 일자는 이틀 연속으로만 진행 가능</li>
+                <li>수업 내용은 동일하지만 원하는 시간대에 따라 주 2회 클래스 또는 주 1회 클래스로 선택 가능</li>
+                <li>실습시간 별도 제한 없음</li>
+              </ul>
+              <p><strong>강의 내용</strong></p>
+              <ul>
+                <li><strong>1-4회:</strong> 미술 기초 및 이론(위생학, 미학, 역사)</li>
+                <li><strong>5-8회:</strong> 작업 기초 및(고무판), 미술 심화</li>
+                <li><strong>9-12회:</strong> 작업 및 미술 마스터링(대상자 실습, 단 대상자는 실습자가 구해올 것), <br/>디자인 및 기타 툴(프로크리에이트, 포토샵) 다루는 방법, 해외 게스트워크 및 컨벤션 요령</li>
+              </ul>
+            <p><strong>경력사항</strong></p>
+            <ul>
+              <li>2024: inspire fly high (청룡전) 심사위원</li>
+              <li>2023: korea tattoo convention MC</li>
+              <li>2023: inspire x agwa tattoo bomb 심사위원</li>
+              <li>2022: inspire tattoo awards 심사위원</li>
+              <li>2021: tattoo star awards 심사위원</li>
+              <li>2012-2021: Apostle Judas 대표</li>
+            </ul>
+            <p>타투학개론 공동 저자</p>
+            <p>LA Ganga Tattoo Studio, Chronic Ink Studio, Nomade France 및 해외 게스트워크 경험 다수</p>
+            <p><strong>프로모션</strong></p>
+            <ol>
+              <li>전 지점 무료사용</li>
+              <li>수료 후 분기별 평가를 통한 프랑스점 정규기수 편성 및 항공료 지원</li>
+              <li>수료 후 분기별 평가를 통한 노마디스트 전환 및 소비자 에이전트</li>
+              <li>수료 후 부스쉐어비 6개월 면제</li>
+              <li>원하는 지점에서 수강 가능하고 수강 후 원하는 지점에서 작업 가능(전 지점 자율 사용)</li>
+              <li>고객분쟁 및 민형사 대응 지원</li>
+              <li>NSC가입비 면제, 연 2회 정기세미나 무료</li>
+              <li>당사 채용전형 서류통과</li>
+              <li>수강 수료증 및 데뷔 후 재직증명서 발급</li>
+              <li>셀프 마케팅 도매 프로그램 교육 및 사용권한 부여</li>
+            </ol>
+            <a href="http://pf.kakao.com/_xfERqG" class="btn_type2">
+              <span style="font-size: 32px">☎️&nbsp;&nbsp;</span>상담하러 가기
+            </a>
+          `;
+          
+          // 모달 내의 정보 엘리먼트에 가져온 정보를 넣음
+          $('#classDescriptionModal .modal-body').html(classDetails);
+          
+          // 모달 표시
+          $('#classDescriptionModal').modal('show');
+        });
+      });
+    </script>
+     <script>
+      $(document).ready(function() {
+        // 각 클래스 아이템을 클릭했을 때 이벤트 핸들러 추가
+        $('.class2').click(function() {
+          // 클릭된 클래스 아이템의 정보를 가져옴
+          var className = $(this).find('h3').text();
+          var classInstructor = '김채영 강사';
+          var classDetails = `
+            <p><strong>${className} - ${classInstructor}</strong></p>
+            <!-- 추가 내용 -->
+            <p><strong>정통 오리지널 SMP 방식 수강</strong></p>
+            <p>두피 문신 1세대의 풍부한 작업 경력을 바탕으로 모든 노하우 세밀하게 전수해 드립니다.</p>
+            <p>요즘 SMP 고객님들께서 하시는 말씀이, 홍보에 속아 큰 돈 내고 받았는데 효과는 미미하고 돌이킬 수 없는 잔흔만 생겨 마음 고생 많이 하셨다는 분들이 계십니다.</p>
+            <p>이렇게 마케팅에만 치중해서 실력 없이 돈벌기 위한 수단이 아닌, 실제 실력 향상 위주에 초점을 맞춰 1:1 혹은 2:1 소수 정예로만 수업하고 있습니다.</p>
+            <p>1:1 과외와 동일한 방식으로, 수강일이 아니어도 평소 상시 피드백을 제공드리고 있으며, 개인별 역량 및 진도에 따라 눈높이를 맞추어 교육합니다.</p>
+
+            <p><strong>수강 기간</strong></p>
+            <p>수강은 주 1회 4시간, 총 8회 수업</p>
+            <ul>
+              <li><strong>1-3주차:</strong> 두피 및 SMP 이론 + 고무판 마네킹 연습</li>
+              <li><strong>4-8주차:</strong> 데모 모델 실습</li>
+            </ul>
+            <p>(단, 실습하실 데모 모델분을 직접 모셔오는 조건입니다.)</p>
+            <p>모델 실습은 단순히 연습하는 과정이 아닌, 연습 이후 시간이 지났을 때에도 내가 찍은 도트가 어떻게 탈각되고 발색되는지 꾸준히 체크하실 수 있도록 주변 지인 및 가족 등 원하시는 분으로 직접 모셔오시길 권장드리고 있습니다.</p>
+
+
+            <p><strong>강의내용</strong></p>
+            <p>실제 실무 경험상 삭발 손님은 거의 드물며 , 가르마 혹은 헤어라인 밀도보강 고객님들이 대부분입니다.
+            때문에 실무에 필요한 내용 위주의 수업과 고객 응대 스킬, 기초적인 위생교육까지 모두 체계적으로 수강합니다.
+            </p>
+            <p><strong>경력사항</strong></p>
+            <ul>
+              <li>한국두피문신전문협회 KSMP 정회원</li>
+              <li>한국두피문신학회 KSMP 과정 이수</li>
+              <li>서울대학교 KSMP MASTER 주최기관 수료</li>
+              <li>미국 주정부 NIC 인증기관 수료</li>
+              <li>IPSN 국제타투라이센스 교육/발급 기관 수료</li>
+              <li>보건복지부 두피문신 민간자격증 주최기관 수료</li>
+              <li>한국패션타투협회 KFTA SMP 전문교육기관 수료</li>
+              <li>문신사중앙회 KTF SMP 전문교육기관 수료</li>
+              <li>한국연구재단 등록 SMP 학회 교육기관 수료</li>
+              <li>한국학술지인용색인 등록 SMP 학회 교육기관 수료</li>
+            </ul>
+            <p><strong>기타 경력사항</strong></p>
+            <ul>
+              <li>전라도 광주 지역 경력 10년 이상의 토탈 뷰티 샵 두피 문신 수강 및 작업 진행 경력</li>
+              <li>2021년 국제 ISO17024 두피 문신 대회 심사위원 참가: 국내외 경력을 인정받을 수 있는 최초의 두피 문신 대회</li>
+            </ul>
+            <p><strong>프로모션</strong></p>
+            <ol>
+              <li>전 지점 무료사용</li>
+              <li>수료 후 분기별 평가를 통한 프랑스점 정규기수 편성 및 항공료 지원</li>
+              <li>수료 후 분기별 평가를 통한 노마디스트 전환 및 소비자 에이전트</li>
+              <li>수료 후 부스쉐어비 6개월 면제</li>
+              <li>원하는 지점에서 수강 가능하고 수강 후 원하는 지점에서 작업 가능(전 지점 자율 사용)</li>
+              <li>고객분쟁 및 민형사 대응 지원</li>
+              <li>NSC가입비 면제, 연 2회 정기세미나 무료</li>
+              <li>당사 채용전형 서류통과</li>
+              <li>수강 수료증 및 데뷔 후 재직증명서 발급</li>
+              <li>셀프 마케팅 도매 프로그램 교육 및 사용권한 부여</li>
+            </ol>
+            <a href="http://pf.kakao.com/_xfERqG" class="btn_type2">
+              <span style="font-size: 32px">☎️&nbsp;&nbsp;</span>상담하러 가기
+            </a>
+          `;
+          
+          // 모달 내의 정보 엘리먼트에 가져온 정보를 넣음
+          $('#classDescriptionModal .modal-body').html(classDetails);
+          
+          // 모달 표시
+          $('#classDescriptionModal').modal('show');
+        });
+      });
+    </script>
   </body>
 </html>

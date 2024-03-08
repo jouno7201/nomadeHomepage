@@ -18347,6 +18347,16 @@ img {
   justify-content: center;
 }
 
+.btn_type2 {
+  padding: 16px;
+  color: #ffffff;
+  border-radius: 28px;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+}
+
 .artistBox {
   width: 100%;
   height: 400px;
