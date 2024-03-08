@@ -18391,7 +18391,6 @@ img {
   border-radius: 12px;
 }
 
-
 /* 모달을 풀스크린으로 만들기 */
 .modal-fullscreen {
   width: 100%;
@@ -18411,39 +18410,50 @@ img {
 
 /* 모달 바디 크기 조절 */
 .modal-body {
-  max-height: calc(100vh - 120px); /* 120px는 모달 헤더와 푸터의 예상 크기입니다. */
+  max-height: calc(
+    100vh - 120px
+  ); /* 120px는 모달 헤더와 푸터의 예상 크기입니다. */
   overflow-y: auto;
 }
 
-#slider {
+.slider {
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
   border-radius: 4px;
+  width: 600px;
+  height: 600px;
 }
 
-#slider ul {
+.slider ul {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 200px;
   list-style: none;
+  width: 600px;
+  height: 600px;
 }
 
-#slider ul li {
+.slider ul li {
   position: relative;
   display: block;
   float: left;
   margin: 0;
   padding: 0;
-  width: 500px;
-  height: 300px;
   background: #ccc;
   text-align: center;
-  line-height: 300px;
+  width: 600px;
+  height: 600px;
 }
 
-a.control_prev, a.control_next {
+.slider ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a.control_prev,
+a.control_next {
   position: absolute;
   top: 40%;
   z-index: 999;
@@ -18460,7 +18470,8 @@ a.control_prev, a.control_next {
   cursor: pointer;
 }
 
-a.control_prev:hover, a.control_next:hover {
+a.control_prev:hover,
+a.control_next:hover {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
 }
