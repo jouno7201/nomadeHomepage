@@ -94,3 +94,113 @@ footer {
 
   overflow: hidden;
 }
+
+.d_timeline {
+  position: relative;
+  counter-reset: list 0;
+  padding: 0;
+  padding-left: 22px;
+}
+
+.d_timeline-item {
+  list-style: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.d_timeline-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.d_timeline-item:last-child {
+  border-left-color: transparent;
+}
+
+.d_timeline-title {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.d_timeline-title {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.d_timeline-title {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.d_timeline-text .d_title {
+  color: #ffffff;
+}
+
+.d_timeline-text .d_title {
+  font-family: var(--title-font);
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: block;
+  font-size: 12px;
+  color: #202020;
+}
+
+.d_timeline-text .d_title {
+  color: #ffffff;
+}
+
+.d_timeline-text .d_company {
+  margin-bottom: 10px;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+
+.de_light .d_timeline-text .d_title {
+  color: #000000;
+}
+
+.d_timeline-title:before {
+  color: #fff;
+  position: relative;
+  left: -22px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #cf1f1f;
+  counter-increment: list;
+  content: counter(list);
+}
+
+.d_timeline-title.s2:before {
+  color: #000000;
+}
+
+.d_timeline-text {
+  margin: 0;
+  padding: 0 0 40px 40px;
+}
+
+.d_timeline-text .d_title span {
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.d_timeline-text .d_title span:before {
+  content: "-";
+  font-style: normal;
+  position: absolute;
+  margin-left: -20px;
+}
