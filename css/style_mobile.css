@@ -33,7 +33,7 @@ header {
   flex-grow: 1;
   margin: 0px;
   padding: 0px;
-  background-color: transparent;
+  background-color: #171a1d;
 }
 #mainmenu ul li {
   height: 36px;
