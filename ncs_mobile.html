@@ -233,6 +233,17 @@
       var menu = document.getElementById('mainmenu');
       menu.classList.toggle('hidden');
     }
+    const header = document.querySelector('header');
+const video = document.querySelector('video');
+
+header.addEventListener('click', function(event) {
+    // 헤더(nav)가 활성화되어 있을 때만 비디오의 클릭 이벤트를 비활성화
+    if (header.classList.contains('hidden')) {
+        video.style.pointerEvents = 'auto';
+    } else {
+        video.style.pointerEvents = 'none';
+    }
+  });
   </script>
 
   <style>
