@@ -317,5 +317,16 @@
         window.location.href = temp.join("/");
       };
     </script>
+    <script>
+      // 모바일 기기인지 확인하는 함수
+      function isMobileDevice() {
+          return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      }
+  
+      // 모바일 기기인 경우 다른 페이지로 이동
+      if (isMobileDevice()) {
+          window.location.href = "home_mobile.html"; // 모바일 페이지로 이동할 경로
+      }
+  </script>
   </body>
 </html>
